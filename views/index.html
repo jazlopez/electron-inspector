@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Revos Resource Inspector</title>
+        <style>
+    
+            body {
+                padding: 0px;
+                margin: 0px;
+                font: caption;
+                -ms-overflow-style: scrollbar;
+                -webkit-app-region:drag;
+            }
+
+            h1, h2, h3, h4, h5, h6 {
+                -webkit-user-select: none;
+            }
+
+            input[type="submit"],
+            input[type="reset"],
+            input[type="button"],
+            input[type="text"],
+            button,
+            textarea,
+            #__buckets__, #__panel-log__{
+                -webkit-app-region: no-drag;
+            }
+            
+            #__buckets__, #__logfile__ {
+                width: 45%;
+                padding: 2%;
+                text-align: center;
+                
+            }
+            
+            #__logfile__{
+                border-left: 1px solid lightskyblue;
+                margin-left: 2%;
+            }
+            
+            #buckets, #__panel-log__ {
+    
+                text-align: initial;
+                height: 400px;
+                overflow: hidden;
+                overflow-y: auto;
+            }
+            
+            #__panel-log__ {
+                font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-size: 70%;
+                line-height: 2.5;
+            }
+    
+            #title-bar {
+                -webkit-app-region: drag;
+                height: 24px;
+                background-color: lightskyblue;
+                opacity: 0.9;
+                padding: none;
+                margin: 0px;
+            }
+    
+            #title {
+                position: fixed;
+                top: 1px;
+                right: 6px;
+                cursor: pointer;
+            }
+    
+            #title-bar-btns {
+                -webkit-app-region: no-drag;
+                position: fixed;
+                top: 1px;
+                left: 6px;
+            }
+            
+            .separator{
+                
+                border-bottom: 1px solid lightblue;
+            }
+            
+            .title {
+                
+                font-weight: 500;
+                color: dodgerblue;
+                text-indent: 10px;
+                
+            }
+            .indent {
+                font-weight: 300;
+                text-indent: 40px;
+                color: darkgray;
+            }
+            
+            .sm {
+                font-size: 80%;
+                line-height: 2;
+            }
+            
+            .title {
+                
+                font-weight: 500;
+            }
+            
+            #__grid_container__ {
+            
+                display: flex;
+                justify-content: space-evenly;
+            }
+            
+        </style>
+    </head>
+    <body>
+    <div>
+        <h2><center>RESOURCES</center></h2>
+    </div>
+    
+    <div id="__grid_container__">
+    
+        <div id="__buckets__">
+            <h4>Buckets</h4>
+            <div id="buckets"></div>
+        </div>
+        
+        <div id="__logfile__">
+            <h4>Log File</h4>
+            <div id="__panel-log__"></div>
+        </div>
+    
+    </div>
+    
+    
+        <script src="./../scripts/bootstrap.js"></script>
+    </body>
+</html>

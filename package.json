@@ -1,0 +1,31 @@
+{
+  "name": "py-service-load-test",
+  "version": "1.0.0",
+  "description": "#### SETUP VIRTUALENV  [@TODO]()",
+  "main": "main.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jazlopez/py-service-load-test.git"
+  },
+  "author": "Jaziel Lopez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jazlopez/py-service-load-test/issues"
+  },
+  "homepage": "https://github.com/jazlopez/py-service-load-test#readme",
+  "devDependencies": {
+    "electron": "^3.0.10",
+    "faker": "^4.1.0"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.372.0",
+    "mock-browser": "^0.92.14"
+  }
+}
